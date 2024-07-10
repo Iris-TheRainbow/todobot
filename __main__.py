@@ -27,6 +27,7 @@ async def on_message(message):
                 await message.channel.send('First time user!')
             knownUsers.close()
 
-        if
+        if not os.path.exists('users/' + user):
+            open('users/' + user, 'w').close()
 
 client.run(api.getKey())
