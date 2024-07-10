@@ -13,6 +13,9 @@ async def on_ready():
     print(f'We have logged in as {client.user}')
     if not os.path.exists('knownUsers'):
         open('knownUsers', 'w').close()
+    if not os.path.exists('users'):
+        os.mkdir('users')
+
 
 @client.event
 async def on_message(message):
@@ -27,7 +30,8 @@ async def on_message(message):
                 await message.channel.send('First time user!')
             knownUsers.close()
 
-        if not os.path.exists('users/' + user):
-            open('users/' + user, 'w').close()
+        todo = 'users/' + user
+        if not os.path.exists(todo):
+            open(todo, 'w').close()
 
 client.run(api.getKey())
