@@ -30,6 +30,10 @@ class User():
         self.todo.pop(position)
         self.update()
 
+    def rename(self, position, newString):
+        self.todo[position] = newString + '\n'
+        self.update()
+
     def update(self):
         print(self.todo)
         with open(self.path, 'w') as f:

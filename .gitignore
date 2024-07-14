@@ -2,3 +2,5 @@ api.py
 knownUsers
 __pycache__
 users
+shared
+sharedLists
