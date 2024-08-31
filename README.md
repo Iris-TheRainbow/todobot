@@ -12,4 +12,5 @@ To manipulate your todo, you can use the command `add` to add a new item to the 
 Remember, inserting the name of a shared todo between the keyword and command will manipulate that todo, rather than your own. For example, `todo hwc add Make node-can-bridge work 1` will add 'Make node-can-bridge work' to the first slot of the 'hwc' list.
 
 (make sure to put an API key in main!!)
+
 ![image](https://github.com/user-attachments/assets/d1727c6a-8211-4d48-8c2e-ce973df59399)
